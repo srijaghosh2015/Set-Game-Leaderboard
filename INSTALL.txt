@@ -1,0 +1,5 @@
+To run this system, simply download the project. Open the terminal, and make 
+sure that you are in the project directory. Then, run dune build. In order to 
+play the game, run dune exec bin/main.exe in the terminal. For instructions 
+on how to play the game, run dune exec bin/main.exe -- -h in the terminal. 
+From here on out, simply follow the instructions given by the program.
