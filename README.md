@@ -1,25 +1,32 @@
 The Set Game
 
+This project is a recreation of the classic card game Set. In each round, the player is shown 12 cards and must find a valid SET of three. A SET is valid only if, for each feature (color, shading, number, and shape), the three cards are either all the same or all different.
 
-  Our project is a recreation of the game Set, where, given 12 cards in a round,
-  the user must find a SET of three. For the SET to be valid, in each individual
-  feature of color, shading, number, and shape, the SET must have either all of 
-  the cards' features be the same or for all of them be different. Our game has 
-  three modes -  the first one has a timer that keeps track of the time elapsed 
-  for the whole game and the time taken to distinguish each set. This mode 
-  records how long it takes to complete the entire game. The second version 
-  allows the user to set a time limit in minutes on how long they want to play 
-  the game. The game will then record how many sets the user managed to find 
-  within the period and will record the sets per minute found in the 
-  leaderboard. The third version has no timer, so nothing will be recorded. If 
-  you choose to play the game in modes 1 or 2, your corresponding username and 
-  score will be recorded in a leaderboard (a .txt file) which is continuously 
-  updated to reflect all the people who have played the game. Users also have 
-  the option to display the leaderboard. 
+Game Modes
+1. Timed Mode (Full Game Timer)
 
+- Tracks the total time required to complete the entire game.
 
-To run this system, simply download the project. Open the terminal, and make 
-sure that you are in the project directory. Then, run dune build. In order to 
-play the game, run dune exec bin/main.exe in the terminal. For instructions 
-on how to play the game, run dune exec bin/main.exe -- -h in the terminal. 
-From here on out, simply follow the instructions given by the program.
+- Tracks the time taken to find each individual set.
+
+- Displays the overall completion time at the end.
+
+2. Custom Time Limit Mode
+
+- Allows the user to choose a time limit (in minutes).
+
+- Counts how many sets the user finds within the chosen time.
+
+- Records the sets-per-minute score in a text-based leaderboard.
+
+3. Free Play Mode
+
+- No timer.
+
+- No score tracking.
+
+- Designed for unrestricted practice.
+
+Leaderboard
+
+- If the user plays in Mode 1 or Mode 2, their username and score are automatically saved to a continuously updated .txt leaderboard file. Users may also choose to display the leaderboard at any time.
