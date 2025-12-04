@@ -1,0 +1,6 @@
+(library
+ (inline_tests)
+ (name cs3110_final_project)
+ (preprocess
+  (pps ppx_inline_test))
+ (libraries csv))
